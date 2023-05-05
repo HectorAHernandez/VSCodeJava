@@ -1,11 +1,11 @@
 package com.java_concepts.firstpackage;
 
-public class C05ClassesConstructorsThisPackages {
+public class C06ClassesUsingTheKeywordThis {
     	public static void main(String[] args) {
 	
-		CarClassV01 bmw = new CarClassV01("Brown", "A Special", 12, 25500);  //Here the Constructor is Simplifying the INITIALIZATION process 
-		CarClassV01 audi = new CarClassV01("Red", "Oceanic", 14, 31520);
-		CarClassV01 honda = new CarClassV01("White", "Accourd", 21, 9500);
+		CarClassV02 bmw = new CarClassV02("Brown", "A Special", 12, 25500);  //Here the Constructor is Simplifying the INITIALIZATION process 
+		CarClassV02 honda = new CarClassV02("White", "Accourd", 21, 9500);
+		CarClassV02 audi = new CarClassV02("Red", "Oceanic", 14, 31520);
 		
 		System.out.println("\n***** My BMW car details are: ");
 		bmw.carDetails();
@@ -16,5 +16,4 @@ public class C05ClassesConstructorsThisPackages {
 				
 	}
 
-    
 }

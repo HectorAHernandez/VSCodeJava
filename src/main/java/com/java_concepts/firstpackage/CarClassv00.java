@@ -1,6 +1,6 @@
 package com.java_concepts.firstpackage;
 
-public class CarClassv00 {
+public class CarClassV00 {
     String color;  //Global-instance variable.
 	String model;  //Global-instance variable.
 	int milage;    //Global-instance variable.

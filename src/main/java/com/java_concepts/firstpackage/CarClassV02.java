@@ -1,10 +1,15 @@
 package com.java_concepts.firstpackage;
 
-public class CarClassV01 {
+public class CarClassV02 {
     	String color;  //Global-instance variable.
 	String model;  //Global-instance variable.
 	int milage;    //Global-instance variable.
-	static int cost;  //Global-static variable. // Error "Only final permitted"
+	//static int cost;  //Global-static variable. // Error "Only final permitted"
+	//         When using static, the variable is going to use a constant value, not changing, for
+	//         all the instances/objects created from the Class based on the last value in the
+	//         last object created when the calling program is compiled. (the third one in program
+	//         C06_ClassesUsingTheKeywordThis.
+	int cost;  //Global-static variable. // Error "Only final permitted"
 	
 
 	
@@ -21,14 +26,13 @@ public class CarClassV01 {
 	
 	// First constructor for the Car Class:
 	// One of the purpose of using constructors is to SIMPLIFY THE INITIALIZATION of Class/Global variables 
-	public CarClassV01(String parm_color, String parm_model, int parm_milage, int parm_cost) {
-		color = parm_color;
-		model = parm_model;
-		milage = parm_milage;
-		cost= parm_cost;
+	public CarClassV02(String color, String model, int milage, int cost) {
+		this.color = color;
+		this.model = model;   // using the 'this.' keyword to identify from the parameter variables with same names.
+		this.milage = milage;
+		this.cost= cost;
 		
-        System.out.println("First Constructor executed");
-        System.out.println("Hector yes!!!!");
+		System.out.println("First Constructor executed");		
 	}
 
 	

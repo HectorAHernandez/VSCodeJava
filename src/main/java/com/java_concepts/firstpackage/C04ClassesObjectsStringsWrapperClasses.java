@@ -45,13 +45,13 @@ public class C04ClassesObjectsStringsWrapperClasses {
 		//    the Class constructor method. Note if the Class receives any parameter, then
 		//    they should be passed here as Class(parm_1, parm_1...)
 		// Example:
-		CarClassv00 bmw = new CarClassv00();
+		CarClassV00 bmw = new CarClassV00();
 		// here the object'sname 'bmw' is an Object-reference and  will be used as a 
 		// reference to access the variables/properties and methods in memory of the just 
 		// created Car object.
 		
 		// Creating another object for the Car Class
-		CarClassv00 audi = new CarClassv00();
+		CarClassV00 audi = new CarClassV00();
 		
 		
 		// Initialize the just created object properties/attributes:
