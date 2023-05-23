@@ -1,20 +1,24 @@
 package com.java_concepts.login;
 
 public abstract class LoginRestricted {
-	
-	// private static variables
-	private static String userName2 = "Hector";   // static, to allow the 'main' method, which 
-	// is static, to access it. Remember Java Rule # 1, static method only can access static
-	// variables and method
-	private static String password2 = "1234";
-	
-	// private method:
-	private static void loginToApplication2() { // also static
-		System.out.println("Logged into the application userName: " + userName2 +
-		" password: " + password2);
-	}
 
-	/*
+  // private static variables
+  private static String userName2 = "Hector"; // static, to allow the 'main' method, which
+  // is static, to access it. Remember Java Rule # 1, static method only can access static
+  // variables and method
+  private static String password2 = "1234";
+
+  // private method:
+  private static void loginToApplication2() { // also static
+    System.out.println(
+      "Private method: loginToApplication2 -> Logged into the application userName2: " +
+      userName2 +
+      " password2: " +
+      password2
+    );
+  }
+
+  /*
 	// private variables
 	private String userName = "Hector";   // default
 	private String password = "1234";
@@ -25,10 +29,12 @@ public abstract class LoginRestricted {
 		" password: " + password);
 	}*/
 
-	
-	// private static method:
-	public static void main(String[] args) {
-		loginToApplication2();
-	}
-
+  // private static method:
+  public static void main(String[] args) {
+    // we can use private method and variable because we are inside of the class
+    // that is defining them.
+    loginToApplication2();
+    userName2 = "private userName2 modified inside class";
+    System.out.println("userName2 --> " + userName2);
+  }
 }

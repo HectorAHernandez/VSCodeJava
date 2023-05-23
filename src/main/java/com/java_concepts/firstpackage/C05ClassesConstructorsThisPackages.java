@@ -1,6 +1,6 @@
-package com.java_concepts.firstpackage;
+package com.java_concepts.first_package;
 
-public class C05ClassesConstructorsThisPackages {
+public abstract class C05ClassesConstructorsThisPackages {
     	public static void main(String[] args) {
 	
 		CarClassV01 bmw = new CarClassV01("Brown", "A Special", 12, 25500);  //Here the Constructor is Simplifying the INITIALIZATION process 

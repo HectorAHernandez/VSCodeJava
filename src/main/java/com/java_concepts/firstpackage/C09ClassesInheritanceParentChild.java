@@ -1,4 +1,4 @@
-package com.java_concepts.firstpackage;
+package com.java_concepts.first_package;
 
 // testing GitL
 
@@ -12,7 +12,7 @@ import com.java_concepts.thirdpackage.Puppy;
 //The java keyword 'extends' is used to define a Class as a Child of a Parent Class.
 // For example in the thirdpackge.Puppy class --> public class Puppy extends Dog {
 
-public class C09ClassesInheritanceParentChild {
+public abstract class C09ClassesInheritanceParentChild {
     	public static void main(String[] args) {
 	
 		//Creating an object from the Parent Class Dog.

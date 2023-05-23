@@ -1,6 +1,6 @@
-package com.java_concepts.firstpackage;
+package com.java_concepts.first_package;
 
-public class C01DemoClass {
+public abstract class C01DemoClass {
     
     	public static void main(String[] args) {
 		System.out.println("Hello Hector!!!!!");
@@ -18,14 +18,17 @@ public class C01DemoClass {
 		double f = 9999.3652;
 		
 		
-		char on_character = 'c';
+		char oneCharacter = 'c';
 		boolean h = false; // or true;
 		
+		System.out.println("c: " + c + " f: " + f + " oneCharacter: " + oneCharacter
+		+ " h: "+h + " d: " +d +" e: "+e +" ");
+
 		int aa = 5;
 		System.out.println(aa%=2);
 		
-		boolean cc = (a >  b) ? true : false; // false --> false
-		System.out.println("cc --> " + cc);
+		//boolean cc = a > b ? true : false; // false --> false
+		//System.out.println("cc --> " + cc);
 		
 		String ccc = (a > b) ? "Hector" : "Amparo"; // false --> Amparo
 		System.out.println("ccc --> " + ccc);

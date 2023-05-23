@@ -1,6 +1,6 @@
-package com.java_concepts.firstpackage;
+package com.java_concepts.first_package;
 
-public class C06ClassesUsingTheKeywordThis {
+public abstract class C06ClassesUsingTheKeywordThis {
     	public static void main(String[] args) {
 	
 		CarClassV02 bmw = new CarClassV02("Brown", "A Special", 12, 25500);  //Here the Constructor is Simplifying the INITIALIZATION process 

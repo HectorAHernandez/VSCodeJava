@@ -1,4 +1,4 @@
-package com.java_concepts.firstpackage;
+package com.java_concepts.first_package;
 
 public class CarClassV03 {
     String color;  //Global-instance variable.

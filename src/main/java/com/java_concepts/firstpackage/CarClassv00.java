@@ -1,10 +1,10 @@
-package com.java_concepts.firstpackage;
+package com.java_concepts.first_package;
 
 public class CarClassV00 {
     String color;  //Global-instance variable.
 	String model;  //Global-instance variable.
 	int milage;    //Global-instance variable.
-	static int cost;  //Global-static variable. // Error "Only final permitted"
+	int cost;  //Global-static variable. // Error "Only final permitted"
 
 	
 	// Below methods, defined for this Class are Non-static method, therefore they are 

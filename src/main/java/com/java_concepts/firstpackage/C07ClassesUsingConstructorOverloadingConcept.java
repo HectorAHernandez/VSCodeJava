@@ -1,4 +1,4 @@
-package com.java_concepts.firstpackage;
+package com.java_concepts.first_package;
 
 // testing GitL
 // This is another version using the keyword 'this.' in the CarClassv02 Class definition
@@ -21,7 +21,7 @@ package com.java_concepts.firstpackage;
 // 1- Inside the same class (Vertical overloading)
 // 2- Outside or in a child class of Class defining the method.
 
-public class C07ClassesUsingConstructorOverloadingConcept {
+public abstract class C07ClassesUsingConstructorOverloadingConcept {
     	public static void main(String[] args) {
 	
 		CarClassV03 bmw = new CarClassV03("Brown", "A Special", 12, 25500);  //Here the Constructor is Simplifying the INITIALIZATION process

@@ -1,8 +1,9 @@
 package com.java_concepts.first_package;
+
 // implementing an abstract class:
 
-// 3- 'abstractl' modifier: Can use used with all, Class, variables and 
-//     method. 
+// 3- 'abstractl' modifier: Can use used with all, Class, variables and
+//     method.
 
 // - 'abstract' at Class level: when used in a Class declaration, then
 //    the Class can contains both 'abstract' and 'NON-abstract" methods
@@ -19,19 +20,17 @@ package com.java_concepts.first_package;
 // NOTE: WE CANNOT CREATE OBJECTS FROM abstract Classes. Therefore,
 //      the only way to access the methods (abstract and NON-abstract)
 //      in an 'abstract' class is by creating another Class that
-//      INHERIT the 'abstract' class. BUT this Child class HAS TO 
+//      INHERIT the 'abstract' class. BUT this Child class HAS TO
 //      IMPLEMENT THE 'abstract' methods in the 'abstract' Class.
 //Then we can create objects of the created Child class.
 
 public abstract class CarClassV06 {
-		
-	//abstract method.
-	public abstract void startCar();
-	
-	
-	// non-abstract method
-	public void stopCar() {
-		System.out.println("Car stopping...");
-	}
-		
+
+  //abstract method.
+  public abstract void startCar();
+
+  // non-abstract method
+  public void stopCar() {
+    System.out.println("Car stopping...");
+  }
 }

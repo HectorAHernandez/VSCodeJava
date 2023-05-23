@@ -1,4 +1,4 @@
-package com.java_concepts.firstpackage;
+package com.java_concepts.first_package;
 
 public class C03ArraysMethodsVariable {
     	//Instance variables:
@@ -6,7 +6,7 @@ public class C03ArraysMethodsVariable {
 	double instance_var_2 = 222;
 	
 	//static variable:
-	static String title_static_var = "This is from a static variable";
+	static String titleStaticVar = "This is from a static variable";
 	static double tax_rate_static_var;
 
 	public static void main(String[] args) {
@@ -28,7 +28,7 @@ public class C03ArraysMethodsVariable {
 		// Another way to declare an Array, with the [] beside the DataType
 		int[] b;            // Declaration
 		b = new int[2];     // Creation
-		
+		System.out.println(b);
 		
 		// Declearing, creating and assigning value to an Array, in a single line (shortcut):
 		int[] c = {34, 7, 99, 78}; // The declaration is normal, use the brackets {} to indicate
@@ -60,8 +60,8 @@ public class C03ArraysMethodsVariable {
 		// Another for an Array of double DataType
 		double[] dd = {23.89, 1.52, 714.9996};
 		
-		for (double d_var : dd) {
-			System.out.println("for-each-loop on double DataType dd = " + d_var);
+		for (double dVar : dd) {
+			System.out.println("for-each-loop on double DataType dd = " + dVar);
 		}
 		
 		
@@ -102,14 +102,14 @@ public class C03ArraysMethodsVariable {
 		
 		// finding the size of a Two dimensional Array. we have to determine the number of rows
 		// and the number or rows independently:
-		int number_rows = arrd2.length; // with the Array's name var we get the number of rows.
-		int number_cols = arrd2[0].length; //Using any row .length we get the number of columns
-		int number_cols2 = arrd2[1].length; //second row, must have same number of column
+		int numberRows = arrd2.length; // with the Array's name var we get the number of rows.
+		int numberCols = arrd2[0].length; //Using any row .length we get the number of columns
+		int numberCols2 = arrd2[1].length; //second row, must have same number of column
 		
 				// Now printing:
-		System.out.println("arrd2.length - Number of rows -->" + number_rows);
-		System.out.println("arrd2[0].length - Number of columns -->" + number_cols);
-		System.out.println("arrd2[1].length - Same number of cols -->" + number_cols2);
+		System.out.println("arrd2.length - Number of rows -->" + numberRows);
+		System.out.println("arrd2[0].length - Number of columns -->" + numberCols);
+		System.out.println("arrd2[1].length - Same number of cols -->" + numberCols2);
 		
 		
 		System.out.println();
@@ -126,15 +126,31 @@ public class C03ArraysMethodsVariable {
 
 	
 		// We can create Array for the multiple Java Datatype:
-		int[] integer_var = {3, 55, 6, 21};
-		double[] double_var = {44.252, 2, 58.41};
-		float[] float_var = {2.12f, 3.1416f, 8f};
-		char[] char_var = {'a', '&', '3', 'R'};
-		String[] string_var = {"Hector", "Amparo", "Selenium", "Java"};
+		int[] integerVar = {3, 55, 6, 21};
+		double[] doubleVar = {44.252, 2, 58.41};
+		float[] floatVar = {2.12f, 3.1416f, 8f};
+		char[] charVar = {'a', '&', '3', 'R'};
+		String[] stringVar = { "Hector", "Amparo", "Selenium", "Java" };
 		
+		for (int item : integerVar) {
+			System.out.println(item);
+		}
+		
+		for (double item : doubleVar) {
+			System.out.println(item);
+		}
+
+		for (float item : floatVar) {
+			System.out.println(item);
+		}
+
+		for (char item : charVar) {
+			System.out.println(item);
+		}
+
 		//Using the String Array:
-		for (String str_var : string_var) {
-			System.out.println("String Array content --> " + str_var);
+		for (String strVar : stringVar) {
+			System.out.println("String Array content --> " + strVar);
 		}
 		
 		//  ** Disadvantage of Arrays:
@@ -145,13 +161,13 @@ public class C03ArraysMethodsVariable {
 		//
 		// 2- Array does not accept value of a DataType different than the ones it was defined.
 		//    int[], only accepts int values. Note: if we need to have values of multiple 
-		//    Datatype we have to declase and create an 'Object type Array, example:
-		Object[] obj_array = {1, 'v', 15.25, "Hector"};
+		//    Datatype we have to declare and create an 'Object type Array, example:
+		Object[] objArray = {1, 'v', 15.25, "Hector"};
 		//    'Object' is a predefined/built-in Java Class. And Object is the parent of all 
 		//             Classes in Java. Therefore it can contains elements of all of the others classes like:
 		//             int, float, String, boolean. double,....
-		for (Object obj_var : obj_array) {
-			System.out.println("Object Array --> " + obj_var );
+		for (Object objVar : objArray) {
+			System.out.println("Object Array --> " + objVar );
 		}
 		
 		
@@ -184,15 +200,15 @@ public class C03ArraysMethodsVariable {
 		}
 		 */
 		
-		method_a();  //calling a method
-		method_b();
-		method_one(52);
-		method_two(34,"hector");
+		methodA();  //calling a method
+		methodB();
+		methodOne(52);
+		methodTwo(34,"hector");
 		
 		
 		// Returning values from methods to the method's calling statement:
 		int result = addValues(5, 60);
-		System.out.println("** Returned value from method addvalues --> "+ result);
+		System.out.println("** Returned value from method addValues --> "+ result);
 		
 		System.out.println(niceMessage());
 		String also = niceMessage();
@@ -217,9 +233,9 @@ public class C03ArraysMethodsVariable {
 		//    declared using the 'static' keyword. example, title_static_var and tax_rate_static_var, lines 10,11
 		//    when declaring a variable as static, it expand the scope of the variable to be used in any method
 		//    defined in the class.
-		System.out.println("\n**** static variable, in main method --> " + title_static_var);
-		title_static_var = "**** New title UPDATE inside the 'main' method ";
-		method_b();
+		System.out.println("\n**** static variable, in main method --> " + titleStaticVar);
+		titleStaticVar = "**** New title UPDATE inside the 'main' method ";
+		methodB();
 		
 		
 		
@@ -231,42 +247,41 @@ public class C03ArraysMethodsVariable {
 		//    System.out.println(var_1_method_one);
 		
 		// 2- static variables can be accessed inside the class scope and any method defined in the class.
-		method_c(); //In this method the static variable title_static_var is updated
+		methodC(); //In this method the static variable title_static_var is updated
 		
 	}
 	
-	public static void method_a(){
+	public static void methodA(){
 		   System.out.println("This is the additional method"); 
-		   method_c();   // calling another method from inside this method.
+		   methodC();   // calling another method from inside this method.
 	}
 		
-	public static void method_b(){
+	public static void methodB(){
 		   System.out.println("This is the additional method-bbbbbb");
-		   System.out.println("\n**** static variable, in method_b method --> " + title_static_var);
+			System.out.println("\n**** static variable, in method_b method --> " +
+		   titleStaticVar);
 	}
 		
 
-	public static void method_c(){
+	public static void methodC(){
 		   System.out.println("This is the additional method-cccc"); 
-		   title_static_var = "New TITLE UPDATE INSIDE 'method_c' method ";
-		   System.out.println(title_static_var );
+		   titleStaticVar = "New TITLE UPDATE INSIDE 'method_c' method ";
+		   System.out.println(titleStaticVar );
 	}
 	
-	public static void method_one(int parm_1) {
-		int var_1_method_one = parm_1;
-		System.out.println("This method_one using one parameter value = "+ var_1_method_one );
+	public static void methodOne(int parm1) {
+		int var1MethodOne = parm1;
+		System.out.println("This method_one using one parameter value = "+ var1MethodOne );
 	}
 	
-	public static void method_two(int parm_1, String parm_2) {
-		int age = parm_1;
-		String name = parm_2 ;
+	public static void methodTwo(int parm1, String parm2) {
+		int age = parm1;
+		String name = parm2 ;
 		System.out.println("This method_one using one parameter Name: "+ name + " age: "+ age  );
 	}
 	
 	public static int addValues(int a, int b) {
-		int sum = a + b;
-		
-		return sum;
+		return a + b;
 	}
 	
 	public static String niceMessage() {

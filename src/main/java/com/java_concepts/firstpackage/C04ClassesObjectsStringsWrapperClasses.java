@@ -1,4 +1,4 @@
-package com.java_concepts.firstpackage;
+package com.java_concepts.first_package;
 
 public class C04ClassesObjectsStringsWrapperClasses {
     	// Global variables:
@@ -86,20 +86,20 @@ public class C04ClassesObjectsStringsWrapperClasses {
 		// int[] var = new  int[3];
 		// String name = new String("Hector Amparo");
 		// or usign the shortcut: String name = "Hector Amparo";
-		String firstname = "Hector";
+		String firstName = "Hector";
 		String space = " ";
 		String lastname = "Amparo";
 		
-		String fullname = firstname + space + lastname ;
-		System.out.println("Full name: " + fullname);
+		String fullName = firstName + space + lastname ;
+		System.out.println("Full name: " + fullName);
 		
 		// Using the .equals method to compare String variables:
-		System.out.println("Hector".equals(firstname)); // true
+		System.out.println("Hector".equals(firstName)); // true
 		
 		// For primitive DataType we can use == operator.
 		
 		// String .length method
-		System.out.println(fullname.length()); //13
+		System.out.println(fullName.length()); //13
 		
 		// In String to get the length we use the length predefine method var.length()
 		// In Arrays to get the length we use the length predefine attribute Arry.length
@@ -122,8 +122,8 @@ public class C04ClassesObjectsStringsWrapperClasses {
 		// sequence in a String variable:
 		name = "     hector Amparo    ";
 		System.out.println(name.length()); // 22
-		String trimmedname = name.trim();
-		System.out.println(trimmedname.length()); // 13
+		String trimmedName = name.trim();
+		System.out.println(trimmedName.length()); // 13
 
 		
 		// If we need to know if a particular word is included in the content of a String
@@ -145,9 +145,9 @@ public class C04ClassesObjectsStringsWrapperClasses {
 		
 		System.out.println("\n"
 				+ "****");
-		String paragraph_2 = "This-is-a-sample-text-written-by-Hector-for-Java-class";
-		String[] words_2 = paragraph_2.split("-");
-		for (String word: words_2) {
+		String paragraph2 = "This-is-a-sample-text-written-by-Hector-for-Java-class";
+		String[] words2 = paragraph2.split("-");
+		for (String word: words2) {
 			System.out.println(word);
 			// ****
 			// This
@@ -189,10 +189,10 @@ public class C04ClassesObjectsStringsWrapperClasses {
 		
 		// How to convert Primitive DataType into Wrapper Classes:
 		int a = 5;          // Define int Primitive DataType
-		Integer int_object; // Define Wrapper Integer DataType
-		int_object = a;     // Convert the primitive into a Wrapper Class Integer.
+		Integer intObject; // Define Wrapper Integer DataType
+		intObject = a;     // Convert the primitive into a Wrapper Class Integer.
 		System.out.println(a); //5
-		System.out.println(int_object); //5
+		System.out.println(intObject); //5
 		 
 		char aa = 'a';
 		Character obj;
@@ -201,31 +201,38 @@ public class C04ClassesObjectsStringsWrapperClasses {
 		System.out.println(obj); //a
 		
 		// Initializing Wrapper Class variable
-		Character c_var = 'a';
-		Integer i_var = 35;
-		Short s_var = 21;
-		Long l_var = 428l;
-		Float f_var = 542.37f;
-		Byte b_var = 8;
-		Double d_var = 452.3698;
-		Boolean bln_var = true;
+		Character cVar = 'a';
+		Integer iVar = 35;
+		Short sVar = 21;
+		Long lVar = 428l;
+		Float fVar = 542.37f;
+		Byte bVar = 8;
+		Double dVar = 452.3698;
+		Boolean blnVar = true;
+
+		System.out.println("cVar: " + cVar + " iVar: " + iVar + " sVar: " + sVar + " lVar: " + lVar
+		+" fVar: "+fVar+ " bVar: "+bVar+ " dVar: "+dVar+ " blnVar: " + blnVar);
 		
-		String str_ac = "100";
-		System.out.println(str_ac + 15); //10015 concatenation because ac is String.
+		String strAc = "100";
+		System.out.println(strAc + 15); //10015 concatenation because ac is String.
 		
 		// Using Wrapper Classes's methods, convert String variables into a primitive DataType:
-		int int_ac = Integer.parseInt(str_ac);
-		long lng_ac = Long.parseLong(str_ac);
-		short sht_ac = Short.parseShort(str_ac);
-		float flt_ac = Float.parseFloat(str_ac);
-		byte byt_ac = Byte.parseByte(str_ac);
-		double dbl_ac = Double.parseDouble(str_ac);
+		int intAc = Integer.parseInt(strAc);
+		long lngAc = Long.parseLong(strAc);
+		short shtAc = Short.parseShort(strAc);
+		float fltAc = Float.parseFloat(strAc);
+		byte bytAc = Byte.parseByte(strAc);
+		double dblAc = Double.parseDouble(strAc);
 		
+		System.out.println("intAc: " + intAc + " lngAc: " + lngAc + " shtAc: " + shtAc +
+		 " fltAc: " + fltAc +" bytAc: "+bytAc+ " dblAc: "+dblAc);
+
+
 		String result = "true";
-		boolean bln_result = Boolean.parseBoolean(result); // any value True/true will be
-		// converted to boolena 'true', any other will be converted to boolean 'false'
-		System.out.println(bln_result); //true
-		System.out.println(!bln_result); //false
+		boolean blnResult = Boolean.parseBoolean(result); // any value True/true will be
+		// converted to boolean 'true', any other will be converted to boolean 'false'
+		System.out.println(blnResult); //true
+		System.out.println(!blnResult); //false
 		
 		// To convert String to any numeric DataType, the content of the String must be of
 		// the numeric DataType only, this is not containing Alphabetic characters
@@ -235,8 +242,8 @@ public class C04ClassesObjectsStringsWrapperClasses {
 		// to fix the issue then we need to first, extract ONLY the digits, using the 
 		// substring() method and then parsing to Integer.
 		nn = nn.substring(0,3);
-		int int_nn = Integer.parseInt(nn);  
-		System.out.println(int_nn + 50);  //173
+		int intNn = Integer.parseInt(nn);  
+		System.out.println(intNn + 50);  //173
 		
 				
 	}

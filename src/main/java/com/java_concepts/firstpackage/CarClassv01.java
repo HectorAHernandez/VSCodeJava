@@ -1,10 +1,10 @@
-package com.java_concepts.firstpackage;
+package com.java_concepts.first_package;
 
 public class CarClassV01 {
-    	String color;  //Global-instance variable.
+    String color;  //Global-instance variable.
 	String model;  //Global-instance variable.
 	int milage;    //Global-instance variable.
-	static int cost;  //Global-static variable. // Error "Only final permitted"
+	int cost;  //Global-static variable. // Error "Only final permitted"
 	
 
 	
@@ -21,11 +21,11 @@ public class CarClassV01 {
 	
 	// First constructor for the Car Class:
 	// One of the purpose of using constructors is to SIMPLIFY THE INITIALIZATION of Class/Global variables 
-	public CarClassV01(String parm_color, String parm_model, int parm_milage, int parm_cost) {
-		color = parm_color;
-		model = parm_model;
-		milage = parm_milage;
-		cost= parm_cost;
+	public CarClassV01(String parmColor, String parmModel, int parmMilage, int parmCost) {
+		color = parmColor;
+		model = parmModel;
+		milage = parmMilage;
+		cost= parmCost;
 		
         System.out.println("First Constructor executed");
         System.out.println("Hector yes!!!!");

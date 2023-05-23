@@ -1,6 +1,6 @@
-package com.java_concepts.firstpackage;
+package com.java_concepts.first_package;
 
-public class C02FlowControlStatements {
+public abstract class C02FlowControlStatements {
     	public static void main(String[] args) {
 		// Selection Statements: if.../if...else.../if...else if...else/switch
 		int a = 5, b = 3;
@@ -33,28 +33,29 @@ public class C02FlowControlStatements {
 				
 		
 		// Switch selection statement:
-		String item_to_eat = "potatoes";
+		String itemToEat = "potatoes";
 		
-		switch(item_to_eat) {
+		switch(itemToEat) {
 		case "cake":
-			System.out.println("The price for "+ item_to_eat + " is 1.25" );
-			System.out.println("Enjoy your "+ item_to_eat);
+			System.out.println("The price for "+ itemToEat + " is 1.25" );
+			System.out.println("Enjoy your "+ itemToEat);
 			break;
 		case "fish":
-			System.out.println("The price for "+ item_to_eat + " is 51.11" );
-			System.out.println("Enjoy your "+ item_to_eat);
+			System.out.println("The price for "+ itemToEat + " is 51.11" );
+			System.out.println("Enjoy your "+ itemToEat);
 			break;
 		case "salad":
-			System.out.println("The price for "+ item_to_eat + " is 2.17" );
-			System.out.println("Enjoy your "+ item_to_eat);
+			System.out.println("The price for "+ itemToEat + " is 2.17" );
+			System.out.println("Enjoy your "+ itemToEat);
 			break;
 		case "juice":
-			System.out.println("The price for "+ item_to_eat + " is 0.42" );
-			System.out.println("Enjoy your "+ item_to_eat);
+			System.out.println("The price for "+ itemToEat + " is 0.42" );
+			System.out.println("Enjoy your "+ itemToEat);
 			break;
 		default:
-			System.out.println(item_to_eat + " is free" );
-			System.out.println("Enjoy your "+ item_to_eat);		
+			System.out.println(itemToEat + " is free" );
+			System.out.println("Enjoy your " + itemToEat);
+			break;
 		}
 		
 		
@@ -62,7 +63,8 @@ public class C02FlowControlStatements {
 		// Iterative statements: for loop/ while loop/ do while loop/ for each loop:
 		// while the condition is checked BEFORE executing the block
 		// while loop : Infinite loop:
-		int aa = 5, bb= 4;
+		int aa = 5;
+		int bb= 4;
 		/*while (aa > bb) {
 			System.out.println("Inside the loop, because aa is > bb");
 		}*/
@@ -123,7 +125,8 @@ public class C02FlowControlStatements {
 	    	System.out.println("Inside case 2");
 	    	break;
 	    default:
-	    	System.out.println("Inside the default case");
+			System.out.println("Inside the default case");
+			break;
 	    }
 	  
 	    
