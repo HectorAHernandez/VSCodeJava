@@ -1,4 +1,4 @@
-package com.java_concepts.first_package;
+package com.java_concepts.firstPackage;
 
 import com.java_concepts.login.LoginProtected;
 

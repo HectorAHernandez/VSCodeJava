@@ -2,111 +2,115 @@
 
 // Using the 'this.' keyword to identify the Instance variables from the parameter variables in the Class constructor:
 
-package com.java_concepts.first_package;
+package com.java_concepts.firstPackage;
 
 public class CarClassV04 {
-	// Car_Class_v04: Now we are making all the variable 'public' so that they can be referenced from
-	// Classes in a different package from where the Class is defined.
-	
-	public String color;  //Global-instance variable.
-	public String model;  //Global-instance variable.
-	public int milage;    //Global-instance variable.
-	public double milage_d;    //Global-instance variable.
-	//static int cost;  //Global-static variable. // Error "Only final permitted"
-	//         When using static, the variable is going to use a constant value, not changing, for
-	//         all the instances/objects created from the Class based on the last value in the
-	//         last object created when the calling program is compiled. (the third one in program
-	//         C06_ClassesUsingTheKeywordThis.
-	public int cost;  //Global-static variable. // Error "Only final permitted"
 
-		
-	// Constructors are method.
-	// Similarities between constructors and methods
-	// 		Methods							Constructors
-	// 	--------------------------		------------------------------------------------
-	//	- have their own name			- have the same name as the Class.
-	//  - Have to be called by code 	- Are automatically executed when any object 
-	//    to be executed.                 is created from the Class. because to create an object
-	//                                	  we have to use the constructor of the type of object 
-	//                                	  we want to create.
-	//  - RETURN results or void.   	- DO NOT RETURN results.
-	
-	// First constructor for the Car Class:
-	// One of the purpose of using constructors is to SIMPLIFY THE INITIALIZATION of Class/Global variables 
-	
-	// Method or Constructors Overloading Concept: In a Class definition, allows to define multiple methods
-	//           with the same name inside the same Class as long as they differ in terms of the following:
-	//       1- Different number of parameters.
-	//       2- Different DataType of the parameters.
-	//		 3- Different order of the parameters.
-	
-	// Overloading Example #1:
-	public CarClassV04(String color, String model, int milage) {
-		this.color = color;
-		this.model = model;   // using the 'this.' keyword to identify from the parameter variables with same names.
-		this.milage = milage;
-		
-		System.out.println("\nExample # 1 (number of Parms): Car_Class_v03 with only 3 parameters: color, model and milage");
-	}	
-	
-	// Overloading Example #2:
-	public CarClassV04(String color, String model, String milage) {
-		this.color = color;
-		this.model = model;   // using the 'this.' keyword to identify from the parameter variables with same names.
-		this.milage = Integer.parseInt(milage);
-		
-		System.out.println("\nExample # 2 (Different DataType- milage String): Car_Class_v03 with only 3 parameters: color, model and milage-String");
-	}	
+  // Car_Class_v04: Now we are making all the variable 'public' so that they can be referenced from
+  // Classes in a different package from where the Class is defined.
 
+  public String color; //Global-instance variable.
+  public String model; //Global-instance variable.
+  public int milage; //Global-instance variable.
+  public double milage_d; //Global-instance variable.
+  //static int cost;  //Global-static variable. // Error "Only final permitted"
+  //         When using static, the variable is going to use a constant value, not changing, for
+  //         all the instances/objects created from the Class based on the last value in the
+  //         last object created when the calling program is compiled. (the third one in program
+  //         C06_ClassesUsingTheKeywordThis.
+  public int cost; //Global-static variable. // Error "Only final permitted"
 
-	// Overloading Example #3:
-	public CarClassV04(int milage, String color, String model) {
-		this.color = color;
-		this.model = model;   // using the 'this.' keyword to identify from the parameter variables with same names.
-		this.milage = milage;
-		
-		System.out.println("\nExample # 3 (Different order in parms- milage first): Car_Class_v03 with only 3 parameters: milage, color and model");
-	}	
+  // Constructors are method.
+  // Similarities between constructors and methods
+  // 		Methods							Constructors
+  // 	--------------------------		------------------------------------------------
+  //	- have their own name			- have the same name as the Class.
+  //  - Have to be called by code 	- Are automatically executed when any object
+  //    to be executed.                 is created from the Class. because to create an object
+  //                                	  we have to use the constructor of the type of object
+  //                                	  we want to create.
+  //  - RETURN results or void.   	- DO NOT RETURN results.
 
-	// Original Class definition
-	public CarClassV04(String color, String model, int milage, int cost) {
-		this.color = color;
-		this.model = model;   // using the 'this.' keyword to identify from the parameter variables with same names.
-		this.milage = milage;
-		this.cost= cost;
-		
-		System.out.println("\nFirst Constructor executed");
-		System.out.println("Original: Car_Class_v03 with only 4 parameters: color, model, milage and cost");
-	}
+  // First constructor for the Car Class:
+  // One of the purpose of using constructors is to SIMPLIFY THE INITIALIZATION of Class/Global variables
 
-	
-	// Note: When a Class is created without a constructor, Java automatically creates 
-	//       an Empty and Hidden constructor. This is why we can create objects from a Class that
-	//       does not have a defined constructor:
-	
-	
-	//		 public Car(){}       // Empty
-	//        
-	
-	// Below methods, defined for this Class are Non-static method, therefore they are 
-	// subject to java rule # 2:
-	// JAVA RULE # 2:
-	// 'Non-static method' can access both, static and non-static variable and methods.
-	// This is Non-statics method can access Global-static and Global-instance variables
-	// and static and Non-static methods.
-	public void startCar() {
-		System.out.println(model + " car started!!!");
-	}
-	
-	public void stopCar() {
-		System.out.println(model + " car stopped");
-	}
-	
-	public void carDetails() {
-		System.out.println("Color of car is " + color);
-		System.out.println("Model of car is " + model);
-		System.out.println("Milage of car is " + milage);
-		System.out.println("The cost of car is " + cost);
-	}
+  // Method or Constructors Overloading Concept: In a Class definition, allows to define multiple methods
+  //           with the same name inside the same Class as long as they differ in terms of the following:
+  //       1- Different number of parameters.
+  //       2- Different DataType of the parameters.
+  //		 3- Different order of the parameters.
 
+  // Overloading Example #1:
+  public CarClassV04(String color, String model, int milage) {
+    this.color = color;
+    this.model = model; // using the 'this.' keyword to identify from the parameter variables with same names.
+    this.milage = milage;
+
+    System.out.println(
+      "\nExample # 1 (number of Parms): Car_Class_v03 with only 3 parameters: color, model and milage"
+    );
+  }
+
+  // Overloading Example #2:
+  public CarClassV04(String color, String model, String milage) {
+    this.color = color;
+    this.model = model; // using the 'this.' keyword to identify from the parameter variables with same names.
+    this.milage = Integer.parseInt(milage);
+
+    System.out.println(
+      "\nExample # 2 (Different DataType- milage String): Car_Class_v03 with only 3 parameters: color, model and milage-String"
+    );
+  }
+
+  // Overloading Example #3:
+  public CarClassV04(int milage, String color, String model) {
+    this.color = color;
+    this.model = model; // using the 'this.' keyword to identify from the parameter variables with same names.
+    this.milage = milage;
+
+    System.out.println(
+      "\nExample # 3 (Different order in parms- milage first): Car_Class_v03 with only 3 parameters: milage, color and model"
+    );
+  }
+
+  // Original Class definition
+  public CarClassV04(String color, String model, int milage, int cost) {
+    this.color = color;
+    this.model = model; // using the 'this.' keyword to identify from the parameter variables with same names.
+    this.milage = milage;
+    this.cost = cost;
+
+    System.out.println("\nFirst Constructor executed");
+    System.out.println(
+      "Original: Car_Class_v03 with only 4 parameters: color, model, milage and cost"
+    );
+  }
+
+  // Note: When a Class is created without a constructor, Java automatically creates
+  //       an Empty and Hidden constructor. This is why we can create objects from a Class that
+  //       does not have a defined constructor:
+
+  //		 public Car(){}       // Empty
+  //
+
+  // Below methods, defined for this Class are Non-static method, therefore they are
+  // subject to java rule # 2:
+  // JAVA RULE # 2:
+  // 'Non-static method' can access both, static and non-static variable and methods.
+  // This is Non-statics method can access Global-static and Global-instance variables
+  // and static and Non-static methods.
+  public void startCar() {
+    System.out.println(model + " car started!!!");
+  }
+
+  public void stopCar() {
+    System.out.println(model + " car stopped");
+  }
+
+  public void carDetails() {
+    System.out.println("Color of car is " + color);
+    System.out.println("Model of car is " + model);
+    System.out.println("Milage of car is " + milage);
+    System.out.println("The cost of car is " + cost);
+  }
 }
