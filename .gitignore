@@ -1,3 +1,25 @@
+.settings/
+grid/assets
+
+# IDEs
+.idea/
+*.iml
+.vscode/launch.json
+
+# Maven
+logs/
+target/
+.mvn/
+
+# Allure
+.Allure
+allure-results
+
+# Others
+env.properties
+pom_local.xml
+.cache/
+
 # Compiled class file
 *.class
 

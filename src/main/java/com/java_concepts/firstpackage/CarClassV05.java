@@ -16,8 +16,11 @@ public class CarClassV05 {
   // variables is a variable that its value will be the same for all
   // the objects created out of the Class. example, number_of_wheels is
   // a Common variable in a Car Class.
-  // Common variables has to be modified as 'static'.
-  // All of the others (Non-Common) has to stay only 'Instance' variable
+  // Common variables has to be modified as 'static' to move them to the
+  // Class level or saved in the class memory area.
+  // All of the others (Non-Common) has to stay only 'Instance' variable or
+  // that they are saved in the memory area of each created instance/object
+  // from the class.
 
   // Instance variables are saved in the memory area that is created when
   // an object is instantiated/created using:
@@ -49,11 +52,12 @@ public class CarClassV05 {
 
     // From a inside the Class we CAN UPDATE the content of an
     // 'static'-Common-Class variable.
-    numberOfWheels = 4;
+    numberOfWheels = 5;
     System.out.println(
-      "\nInside-access: NEW number of wheels is:" + numberOfWheels
+      "\nInside the Class -access: changed NEW number of wheels is:" +
+      numberOfWheels
     );
-    // Output: Inside-access: NEW number of wheels is:4
+    // Output: Inside the Class -access: changed NEW number of wheels is:5
   }
 
   // Instance method:

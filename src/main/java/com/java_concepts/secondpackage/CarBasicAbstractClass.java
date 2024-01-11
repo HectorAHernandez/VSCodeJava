@@ -1,4 +1,4 @@
-package com.java_concepts.firstPackage;
+package com.java_concepts.secondpackage;
 
 // implementing an abstract class:
 
@@ -24,13 +24,27 @@ package com.java_concepts.firstPackage;
 //      IMPLEMENT THE 'abstract' methods in the 'abstract' Class.
 //Then we can create objects of the created Child class.
 
-public abstract class CarClassV06 {
+public abstract class CarBasicAbstractClass {
+
+  static int numberOfWheels = 4;
 
   //abstract method.
   public abstract void startCar();
 
+  public abstract void startFloating();
+
+  public abstract void stopFloating();
+
+  public abstract void startFlying();
+
+  public abstract void stopFlying();
+
   // non-abstract method
   public void stopCar() {
     System.out.println("Car stopping...");
+  }
+
+  public static int getNumberWheels() {
+    return CarBasicAbstractClass.numberOfWheels;
   }
 }

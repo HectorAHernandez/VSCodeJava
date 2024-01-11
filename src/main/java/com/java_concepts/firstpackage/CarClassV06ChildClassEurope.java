@@ -30,7 +30,7 @@ public class CarClassV06ChildClassEurope extends CarClassV06 {
   @Override
   public void startCar() {
     System.out.println(
-      "\nabstract method: Car started in child class Car_Class_v06_ChildC_Europe"
+      "\nOverride the abstract method in a child class: Car started in child class Car_Class_v06_ChildC_Europe"
     );
   }
 }

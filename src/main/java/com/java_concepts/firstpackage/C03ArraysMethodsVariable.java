@@ -169,7 +169,7 @@ public class C03ArraysMethodsVariable {
     // METHODS:
     // Methods store the code or logic of a Class. The variables store the data of a Class.
     // Method's name starts with lowercase and later CamelCase.
-    // any other method in the Class/program, different than the main(sring[] args) method, to execute
+    // any other method in the Class/program, different than the main(String[] args) method, to execute
     // it most be called from inside the 'main' method.
     // In a Java class the 'main' method is the entry point for execution of the Class.
 

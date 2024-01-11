@@ -3,6 +3,7 @@ package com.java_concepts.firstPackage;
 import com.java_concepts.login.LoginOpened;
 // import com.java_concepts.login.LoginRestricted;
 import com.java_concepts.photos.AddPhoto;
+import com.java_concepts.secondpackage.CarBasicAbstractClass;
 
 public abstract class C11ClassesModifiers {
 
@@ -294,5 +295,40 @@ public abstract class C11ClassesModifiers {
     CarClassV06ChildClassEurope euroCar = new CarClassV06ChildClassEurope();
     euroCar.startCar();
     euroCar.stopCar();
+
+    // Another example of using abstract class with a child class when creating
+    //  or instantiating, in  this static main() method, an object of the child
+    // class: CarBasicAbstractClass: abstract --> CarAmerican: child class and
+    //                                        --> Car Australian: child class
+    CarAmerican ford = new CarAmerican();
+    ford.danceRockMusic();
+    ford.startFlying();
+    ford.stopFlying();
+
+    //Now using the method getNumberWheels which is inherited from the
+    // CarBasicAbstractClass in the CarAmerican class.
+    // this getNumberwheels method is used to access static-class level variable
+    // numberOfWheels in the parent class CarBasicAbstractClass.
+    int numWheels = CarAmerican.getNumberWheels();
+
+    ford.carOriginalWheels(numWheels);
+
+    CarAustralian oceanicCar = new CarAustralian();
+    oceanicCar.startCar();
+    oceanicCar.jumpKangaroo();
+    oceanicCar.startFlying(); //Empty/not implemented method in CarAustralian do nothing.
+    oceanicCar.startFloating();
+    oceanicCar.stopFloating();
+
+    //Now using the method getNumberWheels which is inherited from the
+    // CarBasicAbstractClass in the CarAustralian class.
+    // this getNumberwheels method is used to access static-class level variable
+    // numberOfWheels in the parent class CarBasicAbstractClass.
+
+    numWheels = CarAustralian.getNumberWheels();
+    System.out.println("oceanicCar number of wheels: " + numWheels);
+    //numWheels = CarAustralian.numberOfWheels;  here numberOfWheels is not visible to
+    // this main() method, but we can access it value through the above
+    // method CarAustralian.getNumberWheels().
   }
 }
